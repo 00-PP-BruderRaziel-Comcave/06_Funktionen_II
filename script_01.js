@@ -17,6 +17,13 @@
 
 
 
+// module: addition a + b | Test:
+output(add(2,2));
+output(add(2,-2));
+output(add(2,0));
+function add(a,b) {
+	return a + b;
+}
 
 
 // module: output | test:
