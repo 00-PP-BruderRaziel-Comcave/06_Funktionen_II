@@ -11,19 +11,31 @@
 4. Ausgabe in Konsole : check!
 */
 
-// module: division a / b | test
-// output(division(12,4));
-// output(division(12,-4));
-// output(division(9,4));
-// output(division(12,0));
-// output(division(0,12));
-function division(a,b) {
+const ERROR_STR_DIV = "Division durch 0 nicht möglich"
 
-	if (b != 0) {
-		return a/b;
-	} else {
-		return "Division durch 0 nicht mögich";
+
+
+
+
+
+
+// module: divide a / b | test
+output(divide(12,4));
+output(divide(12,-4));
+output(divide(9,4));
+output(divide(12,0));
+output(divide(0,12));
+function divide(a,b) {
+
+	if (b == 0) {
+		return ERROR_STR_DIV;
 	}
+	return a/b; // Regel
+	// if (b != 0) {
+	// 	return a/b;
+	// } else {
+	// 	return "divide durch 0 nicht mögich";
+	// }
 }
 
 // module: multiplication a * b | test
