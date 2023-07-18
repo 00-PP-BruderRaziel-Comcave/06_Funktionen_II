@@ -11,15 +11,19 @@
 4. Ausgabe in Konsole : check!
 */
 
-
-
 // module: division a / b | test
-output(division(12,4));
-output(division(12,-4));
-output(division(9,4));
-output(division(12,0));
+// output(division(12,4));
+// output(division(12,-4));
+// output(division(9,4));
+// output(division(12,0));
+// output(division(0,12));
 function division(a,b) {
-	return a / b;
+
+	if (b != 0) {
+		return a/b;
+	} else {
+		return "Division durch 0 nicht mögich";
+	}
 }
 
 // module: multiplication a * b | test
@@ -52,6 +56,8 @@ function add(a,b) {
 // module: output | test:
 // output("hello");
 // output(2);
+
+
 function output(outputData) {
 	console.log(outputData);
 }
