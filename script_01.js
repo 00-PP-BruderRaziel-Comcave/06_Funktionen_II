@@ -5,14 +5,31 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung : 
-2. Auswahl Rechenart : 
+1. Dateneingabe + -überprüfung : check! | ????
+2. Auswahl Rechenart : check!
 3. Fkt. Grundrechenarten : check!
 4. Ausgabe in Konsole : check!
 */
 
 const ERROR_STRING_DIV = "Division durch 0 nicht möglich";
 const ERROR_STRING_INPUT = "Werner, du bis' ein querulant!";
+
+// module: Dateneingabe & Überprüfung | tests:
+
+startApp();
+function startApp() {
+		output(calculator(getNum(),getNum(),getOp()));
+}
+
+function getNum() {
+	return Number(prompt("Zahl?"));
+}
+
+function getOp() {
+	return prompt("Operator?");
+}
+
+
 
 // module: calculator | test:
 // agreement : "+","-","*",":","/"
